@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hi{
+    color: blueviolet;
+}
+.navitem {
+  @apply font-serif text-xl cursor-pointer sticky transition-all duration-300 ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navitem:hover {
+  @apply text-red-800 scale-105 ; /* Scale up and underline on hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.front{
+  width: 30rem ;
+}
+.pro{
+  margin-left: 50vh;
+}
+.left-0 {
+  left: -30px;
+}
+.top-0 {
+  top: -30px;
+}
+.wid{
+  width: 55rem;
+}
+
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .content-wrapper {
+    margin-top: 80px; /* Ensure this matches the height of your navbar */
   }
-  to {
-    transform: rotate(360deg);
+  .quote {
+    font-family: helvetica; 
+    font-weight: 300;
+    font-size: 15vw;
+    text-transform: uppercase;
   }
-}
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poiret+One&display=swap');
+  .poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 500%;
+  }
+  .poiret-one-regular1 {
+    font-family: "Poiret One", sans-serif;
+    font-weight:bold;
+    font-style: normal;
+    font-size: 150%;
+  }
+  .poiret-one-regular2 {
+    font-family: "Poiret One", sans-serif;
+    font-weight:900;
+    font-style: normal;
+   
+  }
+ 
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poiret+One&family=Pompiere&display=swap');
+  .pompiere-regular {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+  }
+  
