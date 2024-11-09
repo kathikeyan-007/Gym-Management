@@ -11,6 +11,46 @@
 .navitem:hover {
   @apply text-red-800 scale-105 ; /* Scale up and underline on hover */
 }
+/* Chatbot Styles */
+.chatbot-container {
+  position: fixed;
+  right: 10px; /* Adjust the right margin */
+  top: 70vh; /* Adjust to be below 70% of the screen height */
+  z-index: 1000; /* Ensure it's above other content */
+  width: 250px; /* Chatbot width */
+  height: 400px; /* Chatbot height */
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.chatbot-box {
+  overflow: auto;
+  height: 100%;
+  /* Add more styles as necessary for your chatbot's UI */
+}
+
+.chatbot-container p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .chatbot-container {
+    width: 200px;  /* Adjust width for smaller screens */
+    height: 300px; /* Adjust height for smaller screens */
+    top: 75vh;     /* Adjust positioning for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-container {
+    width: 180px;  /* Adjust width for smaller screens */
+    height: 250px; /* Adjust height for smaller screens */
+    top: 80vh;     /* Adjust positioning for smaller screens */
+  }
+}
 
 
 .front{
